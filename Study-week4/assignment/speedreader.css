@@ -1,0 +1,64 @@
+body{
+  background-color:#EAF6F6;
+  font-size:12pt;
+  font-family:"Garamond";
+}
+h1{
+  text-align:center;
+}
+#heading{
+  margin-left:10%;
+  width:80%;
+  height:100px;
+  border: 2px solid #8EBEBE;
+  border-radius: 5px;
+  background-color:#FFFF;
+  text-align:center;
+  font-size:36pt;
+  font-family="monospace";
+}
+SELECT{
+  border:1px solid #8EBBE;
+}
+button{
+  background-color:#FFFF;
+  border:1px solid gray;
+  width:70px;
+}
+p.underline{
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 1px solid #8EBEBE;
+  width: 100%;
+  padding: 2px;
+}
+#inputText{
+  border:1px solid gray;
+  background-color:#FFFF;
+}
+div.control{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  vertical-align:top;
+}
+div.playCon{
+  margin-left:20%;
+}
+div.Speed{
+  margin-left:1.5%;
+}
+div.conSize{
+  margin-left:1.5%;
+  margin-right:20%;
+}
+div.conInput{
+  display:block;
+  margin-left:20%;
+  margin-right:20%;
+}
+
+button:disabled{
+  background-color:lightgray;
+}

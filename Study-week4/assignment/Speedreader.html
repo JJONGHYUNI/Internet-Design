@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <title>Assignment-week4</title>
+    <link rel="stylesheet" type="text/css" href="speedreader.css"/>
+    <script src="speedreader.js" type="text/javascript"></script>
+  </head>
+  <h1>SpeedReader</h1>
+  <div id="heading"></div>
+  <div class="control">
+    <div class="playCon">
+      <p class="underline">Play Controls:</p>
+      <button id="start">Start</button>
+      <button id="stop" disabled>Stop</button>
+    </div>
+    <div class="Speed">
+      <p class="underline">Speed:</p>
+      <SELECT id="SpeedMenu" NAME="menu">
+        <OPTION value=1200>50 wpm
+        <OPTION value=200>300 wpm
+        <OPTION value=171 SELECTED>350 wpm
+        <OPTION value=150>400 wpm
+        <OPTION value=133>450 wpm
+        <OPTION value=120>500 wpm
+      </SELECT>
+    </div>
+    <div class="conSize">
+      <p class="underline">Size:</p>
+      <div id="changeSize">
+        <input id="36pt" type="radio" name="size" VALUE=36 checked="checked" />Medium
+        <input id="48pt" type="radio" name="size" VALUE=48 />Big
+        <input id="60pt" type="radio" name="size" VALUE=60 />Bigger
+      </div>
+    </div>
+    <div class="conInput">
+      <p class="underline">Input Text:</p>
+      <textarea id="inputText" ROWS=10 COLS=80>
+StudentId:201801690
+Name:JongHyun Lee
+    </textarea>
+    </div>
+  </div>
