@@ -1,3 +1,5 @@
+/* 201801690 이종현 hw3 speedreader.css */
+/*body 태그의 배경색을 #EAF6F6 font크기와 fontfamily 설정 */
 body{
   background-color:#EAF6F6;
   font-size:12pt;
@@ -6,6 +8,7 @@ body{
 h1{
   text-align:center;
 }
+/* speedreader의 텍스트가 뜨는 부분으로 띄울 창의 디자인 설정 */
 #heading{
   margin-left:10%;
   width:80%;
@@ -18,14 +21,17 @@ h1{
   font-size:36pt;
   font-family="monospace";
 }
+/*speed 버튼 부분  */
 SELECT{
   border:1px solid #8EBBE;
 }
+/* 시작과 정지 버튼 부분 */
 button{
   background-color:#FFFF;
   border:1px solid gray;
   width:70px;
 }
+/* 각 텍스트의 밑줄을 디자인 */
 p.underline{
   font-weight: bold;
   text-align: left;
@@ -33,10 +39,12 @@ p.underline{
   width: 100%;
   padding: 2px;
 }
+/* 텍스트 입력 부분 */
 #inputText{
   border:1px solid gray;
   background-color:#FFFF;
 }
+/* 플렉스박스를 통해서 각 옵션들을 정렬 */
 div.control{
   display: flex;
   flex-direction: row;
@@ -44,6 +52,7 @@ div.control{
   justify-content: center;
   vertical-align:top;
 }
+/* 각각의 간격을 조화롭게 조정 */
 div.playCon{
   margin-left:20%;
 }
@@ -59,7 +68,7 @@ div.conInput{
   margin-left:20%;
   margin-right:20%;
 }
-
+/* 비활성된 버튼들에 색상 조절 */
 button:disabled{
   background-color:lightgray;
 }

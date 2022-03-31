@@ -9,6 +9,7 @@ var result;
 //묘듈패턴
 (function(){
   window.onload=function(){
+    // 시작과 정지 옵션들에 클릭하는 이벤트 발생시 함수 호출
     let startbtn=document.getElementById("start");
     startbtn.addEventListener("click",speedReader);
     let stopbtn=document.getElementById("stop");
@@ -23,7 +24,9 @@ var result;
     document.getElementById("stop").disabled=false;
     document.getElementById("start").disabled=true;
     document.getElementById("inputText").disabled=true;
+    // 스타트를 중복으로 클릭해서 발생하는 오류를 막기 위해서 카운트를 써줌.
     clickCount+=1;
+    // 2번째 클릭부터는 동작을 하지 않음
     if(clickCount>=2){
       return;
     }
@@ -34,10 +37,14 @@ var result;
   }
   //멈추는 부분
   function stopSpeedReader(){
+    //클릭카운트 초기화
     clickCount=0;
+    // 반복해서 나타나는 텍스트를 멈춰줌
     clearInterval(play);
     let display=document.getElementById("heading");
+    // 화면 클리어
     display.innerHTML="";
+    // 활성할 버튼과 비활성할 버튼 설정 
     document.getElementById("stop").disabled=true;
     document.getElementById("start").disabled=false;
     document.getElementById("inputText").disabled=false;
@@ -54,6 +61,7 @@ var result;
   //사용자가 선택한 사이즈 적용 부분
   function checkSize(){
     let display=document.getElementById("heading");
+    // 폰트의 value를 받아와서 fontsize를 변경해줌.
     let fontelement=[document.getElementById("36pt"),document.getElementById("48pt"),document.getElementById("60pt")];
     for(var i =0; i<fontelement.length; i++){
       if(fontelement[i].checked==true){
@@ -80,6 +88,7 @@ var result;
   function checkPunct(){
     let Pun = result[index];
     let PunLength=result[index].length;
+    // 구두점이 존재하면 아래내용 진행
     if(punTrueFalse(result[index])){
       Pun=result[index].replace(/[`.~!@%^&|\\\'\";:\/?]*$/,"");
       result[index]=Pun;

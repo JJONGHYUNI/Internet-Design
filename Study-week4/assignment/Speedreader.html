@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Assignment-week4</title>
+    <title>201801690 이종현 hw3 speedreader</title>
+    <!-- 디자인해줄 css와 행동을 나타낼 자바스크립트 불러오기 -->
     <link rel="stylesheet" type="text/css" href="speedreader.css"/>
     <script src="speedreader.js" type="text/javascript"></script>
   </head>
   <body>
     <h1>SpeedReader</h1>
+    <!-- 디스플레이를 나타낼 부분으로 동작은 자바스크립트에서 설정 -->
     <div id="heading"></div>
+    <!-- 아래 옵션과 텍스트를 나타낼 전체 틀을 div태그로 묶어줌 -->
     <div class="control">
+      <!-- 각 옵션을 다른 클래스로 나타내서 css에서 디자인하기 편하게 함 -->
       <div class="playCon">
         <p class="underline">Play Controls:</p>
         <button id="start">Start</button>
@@ -16,6 +20,7 @@
       </div>
       <div class="Speed">
         <p class="underline">Speed:</p>
+        <!-- 속도 벨류값을 설정하여 자바 스크립트로 쉽게 받아 사용할 수 있도록 함. -->
         <SELECT id="SpeedMenu" NAME="menu">
           <OPTION value=1200>50 wpm
           <OPTION value=200>300 wpm
@@ -27,12 +32,14 @@
       </div>
       <div class="conSize">
         <p class="underline">Size:</p>
+        <!-- 각 사이즈의 벨류값을 설정해놔서 자바스크립트에서 쉽게 받아 사용할 수 있도록함. -->
         <div id="changeSize">
           <input id="36pt" type="radio" name="size" VALUE=36 checked="checked" />Medium
           <input id="48pt" type="radio" name="size" VALUE=48 />Big
           <input id="60pt" type="radio" name="size" VALUE=60 />Bigger
         </div>
       </div>
+      <!-- 텍스트를 입력하는 부분 -->
       <div class="conInput">
         <p class="underline">Input Text:</p>
         <textarea id="inputText" ROWS=10 COLS=80>
