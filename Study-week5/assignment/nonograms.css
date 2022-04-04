@@ -8,7 +8,7 @@ h1 {
   font-size: 26pt;
   margin-bottom: 40px;
 }
-
+/* 클리어 버튼 스타일 */
 #clear{
   position:absolute;
   top:2px;
@@ -17,6 +17,7 @@ h1 {
   height:100px;
   font-size:36px;
 }
+/* 두번째 클릭시 x 이미지 배경으로 설정 */
 .X-out{
   background-image: url('img/x.png');
   background-size: cover;
@@ -24,7 +25,7 @@ h1 {
 .box {
   border: 1px solid #111;
 }
-
+/* 마우스가 위에 올라와 있을 경우 그림자를 줌 */
 #grid div:hover{
   box-shadow: 0px 0px 2px 2px #111111;
 }
